@@ -1,0 +1,38 @@
+import java.util.*;
+class Shape
+{
+ void calculatearea(int a)
+ {
+  System.out.println("Area of Square = "+a*a);
+ }
+ void calculatearea(float l,int b)
+ {
+  System.out.println("Area of rectangle = "+l*b);
+ }
+ void calculatearea(float r)
+ {
+  System.out.println("Area of circle = "+3.14*r*r);
+ }
+}
+class shapes
+{
+ public static void main(String args[])
+ { 
+ Scanner s=new Scanner(System.in);
+ Shape sh=new Shape();
+ System.out.println("Enter the sides of Square:");
+ int a=s.nextInt();
+ System.out.println("Enter the sides of Rectangle:");
+ float l=s.nextFloat();
+ int b=s.nextInt();
+ System.out.println("Enter the radius of circle: ");
+ float r=s.nextFloat();
+ sh.calculatearea(a);
+ sh.calculatearea(l,b);
+ sh.calculatearea(r);
+ }
+}
+
+
+
+
